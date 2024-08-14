@@ -21,7 +21,7 @@
         "src/*"
     ],
     "dependencies": {
-        "@dasred/komoot-client": "^1.0.1",
+        "@dasred/komoot-client": "github:dasred/komoot-client#semver:^1.0.0",
         "command-line-args": "^6.0.0",
         "dayjs": "^1.11.12",
         "dotenv": "^16.4.5"
