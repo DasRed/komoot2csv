@@ -1,0 +1,67 @@
+{
+    "name": "@dasred/komoot2csv",
+    "version": "0.0.0",
+    "main": "src/index.js",
+    "type": "module",
+    "author": "DasRed",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/DasRed/komoot2csv/issues"
+    },
+    "homepage": "https://github.com/DasRed/komoot2csv",
+    "engines": {
+        "node": ">=22.6.0",
+        "npm": ">=10.8.2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/DasRed/komoot2csv.git"
+    },
+    "files": [
+        "src/*"
+    ],
+    "dependencies": {
+        "@dasred/komoot-client": "^1.0.1",
+        "command-line-args": "^6.0.0",
+        "dayjs": "^1.11.12",
+        "dotenv": "^16.4.5"
+    },
+    "devDependencies": {
+        "@semantic-release/commit-analyzer": "^13.0.0",
+        "@semantic-release/git": "^10.0.1",
+        "@semantic-release/github": "^10.1.4",
+        "@semantic-release/npm": "^12.0.1",
+        "semantic-release": "^24.0.0",
+        "semantic-release-cli": "^5.4.6"
+    },
+    "scripts": {
+        "start": "node ./src/index.js",
+        "semantic-release": "semantic-release"
+    },
+    "publishConfig": {
+        "access": "restricted",
+        "registry": "https://npm.pkg.github.com"
+    },
+    "release": {
+        "branches": [
+            "main"
+        ],
+        "plugins": [
+            "@semantic-release/commit-analyzer",
+            "@semantic-release/github"
+        ],
+        "prepare": [
+            {
+                "path": "@semantic-release/npm",
+                "npmPublish": false
+            },
+            {
+                "path": "@semantic-release/git",
+                "assets": [
+                    "package.json",
+                    "package-lock.json"
+                ]
+            }
+        ]
+    }
+}
