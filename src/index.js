@@ -1,26 +1,22 @@
-import 'dotenv/config'
 import Client from '@dasred/komoot-client';
-import commandLineArgs from 'command-line-args';
 import dayjs from 'dayjs';
 import fs from 'fs';
+import help from './help.js';
+import config from './config.js';
 
-const options = commandLineArgs([
-    {name: 'email', alias: 'e', type: String, defaultValue: process.env.K2C_EMAIL},
-    {name: 'password', alias: 'p', type: String, defaultValue: process.env.K2C_PASSWORD},
-    {name: 'file', alias: 'f', type: String, defaultValue: process.env.K2C_FILE},
-    {name: 'filterSport', type: String, description: 'Filter by type sport. E.g. touringbicycle', defaultValue: process.env.K2C_FILTER_SPORT ?? undefined},
-    {name: 'filterAfterDate', type: String, description: 'Filter by date and ignore all before given date. E.g. 2021-08-13T15:20:20.000Z', defaultValue: process.env.K2C_FILTER_AFTER_DATE ?? undefined},
-    {name: 'locale', type: String, description: 'Locale to use for output. Default de-DE', defaultValue: process.env.K2C_LOCALE ?? 'de-DE'},
-]);
-
-Number.prototype.n2s  = function() {
-    return this.toLocaleString(options.locale, {minimumFractionDigits: 0, maximumFractionDigits: 12});
+if (config.help) {
+    help();
+    process.exit(0);
 }
 
-const client = new Client({...options});
+Number.prototype.n2s  = function() {
+    return this.toLocaleString(config.locale, {minimumFractionDigits: 0, maximumFractionDigits: 12});
+}
+
+const client = new Client({...config});
 
 console.log('Requesting tours');
-const tours     = await client.toursMade({sportTypes: options.filterSport, startDate: options.filterAfterDate});
+const tours     = await client.toursMade({sportTypes: config.filterSport, startDate: config.filterAfterDate});
 
 let speedTotal    = 0;
 let distanceTotal = 0;
@@ -56,5 +52,5 @@ const result = [
     ].join(';');
 }));
 
-fs.writeFileSync(options.file, result.join('\n'), {encoding: 'utf8'});
+fs.writeFileSync(config.file, result.join('\n'), {encoding: 'utf8'});
 console.log('Done');

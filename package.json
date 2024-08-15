@@ -23,6 +23,7 @@
     "dependencies": {
         "@dasred/komoot-client": "github:dasred/komoot-client#semver:^1.0.0",
         "command-line-args": "^6.0.0",
+        "command-line-usage": "^7.0.3",
         "dayjs": "^1.11.12",
         "dotenv": "^16.4.5"
     },
