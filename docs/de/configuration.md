@@ -1,6 +1,6 @@
 ---
 title: Konfiguration
-description: Alle Optionen und Umgebungsvariablen von komoot2csv mit Standardwerten, dazu die .env-Datei.
+description: Alle Optionen und Umgebungsvariablen von komoot2csv mit Standardwerten, dazu die .env-Datei für die komoot-Zugangsdaten und das Gebietsschema für Zahlen.
 order: 20
 slug: konfiguration
 section: Nutzung

@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: Command line tool that writes your recorded komoot tours with distance, duration, speed and elevation into a CSV file.
+description: Command line tool that writes your recorded komoot tours with distance, duration, speed and elevation into a CSV file. What it does, status and related tools.
 order: 0
 section: Getting started
 ---

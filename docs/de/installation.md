@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: komoot2csv klonen, Abhängigkeiten installieren und den ersten Export starten.
+description: komoot2csv mit Node.js ab 22.6 einrichten, das Repository klonen, die Abhängigkeiten installieren und den ersten Export deiner komoot-Touren als CSV starten.
 order: 10
 slug: installation
 section: Einstieg

@@ -1,6 +1,6 @@
 ---
 title: Usage
-description: Export tours with komoot2csv, filter them and read the columns of the CSV file correctly.
+description: Export komoot tours to CSV with komoot2csv, all of them or only one sport from a given date, read the columns of the file correctly and know the limits.
 order: 30
 slug: usage
 section: Usage

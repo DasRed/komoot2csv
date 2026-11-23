@@ -1,6 +1,6 @@
 ---
 title: Installation
-description: Clone komoot2csv, install the dependencies and run the first export.
+description: Set up komoot2csv with Node.js 22.6 or newer, clone the repository, install the dependencies and run the first export of your komoot tours to CSV.
 order: 10
 slug: installation
 section: Getting started

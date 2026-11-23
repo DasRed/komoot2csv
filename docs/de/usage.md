@@ -1,6 +1,6 @@
 ---
 title: Verwendung
-description: Touren mit komoot2csv exportieren, filtern und die Spalten der CSV-Datei richtig lesen.
+description: komoot-Touren mit komoot2csv als CSV exportieren, alle oder nur eine Sportart ab einem Datum, die Spalten der Datei richtig lesen und die Grenzen kennen.
 order: 30
 slug: verwendung
 section: Nutzung

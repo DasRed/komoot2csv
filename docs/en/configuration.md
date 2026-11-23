@@ -1,6 +1,6 @@
 ---
 title: Configuration
-description: All options and environment variables of komoot2csv with defaults, plus the .env file.
+description: All options and environment variables of komoot2csv with their defaults, plus the .env file for your komoot credentials and the locale used for numbers.
 order: 20
 slug: configuration
 section: Usage
