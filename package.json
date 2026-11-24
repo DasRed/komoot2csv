@@ -27,44 +27,7 @@
         "dayjs": "^1.11.12",
         "dotenv": "^16.4.5"
     },
-    "devDependencies": {
-        "@semantic-release/commit-analyzer": "^13.0.0",
-        "@semantic-release/git": "^10.0.1",
-        "@semantic-release/github": "^10.1.4",
-        "@semantic-release/npm": "^12.0.1",
-        "semantic-release": "^24.0.0",
-        "semantic-release-cli": "^5.4.6"
-    },
     "scripts": {
-        "start": "node ./src/index.js",
-        "semantic-release": "semantic-release"
-    },
-    "publishConfig": {
-        "access": "restricted",
-        "registry": "https://npm.pkg.github.com"
-    },
-    "release": {
-        "branches": [
-            "main"
-        ],
-        "plugins": [
-            "@semantic-release/commit-analyzer",
-            [
-                "@semantic-release/npm",
-                {
-                    "npmPublish": false
-                }
-            ],
-            [
-                "@semantic-release/git",
-                {
-                    "assets": [
-                        "package.json",
-                        "package-lock.json"
-                    ]
-                }
-            ],
-            "@semantic-release/github"
-        ]
+        "start": "node ./src/index.js"
     }
 }

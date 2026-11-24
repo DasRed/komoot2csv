@@ -1,4 +1,0 @@
-kind: template
-load: nodeReleaseToGithub.jsonnet
-data:
-  node: 22
