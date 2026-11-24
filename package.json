@@ -8,7 +8,7 @@
     "bugs": {
         "url": "https://github.com/DasRed/komoot2csv/issues"
     },
-    "homepage": "https://github.com/DasRed/komoot2csv",
+    "homepage": "https://www.marco-starker.de/en/projects/komoot2csv/docs",
     "engines": {
         "node": ">=22.6.0",
         "npm": ">=10.8.2"
