@@ -1,3 +1,9 @@
+## [1.1.2](https://github.com/DasRed/komoot2csv/compare/v1.1.1...v1.1.2) (2026-11-24)
+
+### Bug Fixes
+
+* homepage fixed ([89da201](https://github.com/DasRed/komoot2csv/commit/89da201d20263ec7a98548fa85143cf29c1c792b))
+
 ## [1.1.1](https://github.com/DasRed/komoot2csv/compare/v1.1.0...v1.1.1) (2026-11-24)
 
 ### Bug Fixes
